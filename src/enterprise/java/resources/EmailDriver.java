@@ -14,11 +14,15 @@ import javax.ws.rs.Produces;
 import java.util.Properties;
 
 /**
- * Created by Student on 11/7/2015.
+ * Created by Lanny, Nathan, Brandon on 11/7/2015.
  */
 @Path("/sendEmail")
 public class EmailDriver {
 
+    /**
+     * The only purpose of this method is to return a String, letting the user know that the path was reached.
+     * @return a string to user
+     */
     @GET
     @Path("/test")
     @Produces("text/html")
@@ -26,36 +30,44 @@ public class EmailDriver {
         return "Hey it worked!";
     }
 
-    // TO TEST: http://localhost:9998/sendEmail/A Test Message/This is the body/slackTeamTest@gmail.com
-    // 1. When called takes the pathParams and creates a new EmailMessage
-    // 2. {sbj:A Test Message}
+    /**
+     * This method constructs an EmailMessage and calls the sendEmail() passing in the newly constructed message and
+     * the recipients address.
+     * @param subject used to construct an EmailMessage
+     * @param body used to construct an EmailMessage
+     * @param recipient sent as a parameter in the sendEmail() call
+     * @return
+     */
     @GET
     @Path("{sbj}/{msg}/{recipient}")
     @Produces("text/html")
     public String sendEmailToStringOfAddresses(@PathParam("sbj") String subject,
                                                @PathParam("msg") String body,
-                                               @PathParam("recipient") String recipients) {
+                                               @PathParam("recipient") String recipient) {
 
         EmailMessage message = new EmailMessage(subject, body);
 
-        sendEmail(message, recipients);
+        sendEmail(message, recipient);
 
         String feedbackMessage = "Email Sent Successfully";
         return feedbackMessage;
     }
 
 
-//    {"recipients":[
-//        {"email":"slackTeamTest@gmail.com","name":"test"},
-//        {"email":"slackTeamTest@gmail.com","name":"test2"}
-//        ]}
-// http://localhost:9998/sendEmail/personalize/A Test Message/This is the body/{"recipients":[{"email":"slackTeamTest@gmail.com","name":"test"},{"email":"slackTeamTest@gmail.com","name":"test2"}]}
+    /**
+     * This method maps a Recipients object based on the jsonRecipients parameter.
+     * Loops through the Recipient objects and creates a unique Email Message for each and than calling the sendEmail()
+     * @param subject used to construct an EmailMessage
+     * @param body used to construct an EmailMessage
+     * @param jsonRecipients used to map a Recipients object
+     * @return a string with a list of recipient names of the emails sent.
+     */
     @GET
     @Path("/personalize/{sbj}/{msg}/{recipient}")
     @Produces("text/html")
-    public String sendEmailToReceipientObjectAddresses(@PathParam("sbj") String subject,
-                                                       @PathParam("msg") String body,
-                                                       @PathParam("recipient") String jsonRecipients) {
+    public String sendEmailToRecipientObjectAddresses(@PathParam("sbj") String subject,
+                                                      @PathParam("msg") String body,
+                                                      @PathParam("recipient") String jsonRecipients) {
 
         Recipients recipients = JsonMapper.toClassInstance(jsonRecipients, Recipients.class);
 
@@ -73,6 +85,13 @@ public class EmailDriver {
         return feedbackMessage.toString();
     }
 
+    /**
+     * The purpose of this method is to send an email.
+     * This method uses 'slackTeamTest@gmail.com' as the sender.
+     * The contents of the message and the recipient are passed in on the string
+     * @param emailMessage an EmailMessage object that has a subj/body
+     * @param address an address the email should be sent to
+     */
     public void sendEmail(EmailMessage emailMessage, String address) {
         final String username = "slackTeamTest@gmail.com";
         final String password = "weLoveSlack";
