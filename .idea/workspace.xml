@@ -8,9 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f3d29c7-d679-48ff-b48c-bf2bc9a620ee" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/enterprise/java/HostServer.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/enterprise/java/resources/EmailDriver.java" afterPath="$PROJECT_DIR$/src/enterprise/java/resources/EmailDriver.java" />
     </list>
     <ignored path="NewEmailWebservice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,25 +52,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmailDriver.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EmailDriver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/enterprise/java/resources/EmailDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="50" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.28363046">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="e#830#831#0" expanded="true" />
+                <element signature="e#776#777#0" expanded="true" />
+                <element signature="e#815#816#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonMapper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JsonMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/enterprise/java/JsonMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19286872">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -112,8 +111,8 @@
       <list>
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/out/artifacts/NewEmailWebservice_war_exploded/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/enterprise/java/resources/EmailDriver.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/enterprise/java/resources/EmailDriver.java" />
       </list>
     </option>
   </component>
@@ -847,7 +846,7 @@
       <workItem from="1449067989045" duration="1022000" />
       <workItem from="1449537187862" duration="4560000" />
       <workItem from="1449633883897" duration="27000" />
-      <workItem from="1449633986636" duration="147000" />
+      <workItem from="1449633986636" duration="171000" />
     </task>
     <task id="LOCAL-00001" summary="adds paths used for testing.">
       <created>1449634074208</created>
@@ -861,11 +860,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449634125164</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Removed old HostServer.java class">
+      <created>1449634152298</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1449634152298</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8726000" />
+    <option name="totallyTimeSpent" value="8750000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -878,7 +883,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -892,7 +897,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3598015" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -925,7 +930,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adds paths used for testing." />
     <MESSAGE value="added javadocs, cleaned up comments." />
-    <option name="LAST_COMMIT_MESSAGE" value="added javadocs, cleaned up comments." />
+    <MESSAGE value="Removed old HostServer.java class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed old HostServer.java class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -960,8 +966,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -996,8 +1002,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1024,8 +1030,8 @@
           <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1052,8 +1058,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1105,23 +1111,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/enterprise/java/resources/EmailDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/enterprise/java/JsonMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="50" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#830#831#0" expanded="true" />
-          </folding>
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/enterprise/java/JsonMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/enterprise/java/resources/EmailDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19286872">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
+        <state vertical-scroll-proportion="0.28363046">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

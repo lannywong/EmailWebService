@@ -14,7 +14,7 @@ import javax.ws.rs.Produces;
 import java.util.Properties;
 
 /**
- * Created by Lanny, Nathan, Brandon on 11/7/2015.
+ * Created by Student on 11/7/2015.
  */
 @Path("/sendEmail")
 public class EmailDriver {
