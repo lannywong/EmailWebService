@@ -3,7 +3,14 @@
 - Nathan Wuenstel
 - Brandon Ciancio
 
-### Project Goal: 
+###### Paths used for testing:
+```
+rest/sendEmail/test
+rest/sendEmail/A Test Message/A Test Body/slackTeamTest@gmail
+rest/sendEmail/A Test Message/A Test Body/{"recipients":[{"email":"slackTeamTest@gmail.com","name":"test"},{"email":"slackTeamTest@gmail.com","name":"test2"}]}
+```
+
+### Project Goal:
 Create a web-service that sends an email to one or many users. The email recipients and email contents are based on parameters. The parameters that we would require are: a collection of emails, a subjectLine, and messageContent.
 				   
 ### Knownbugs / Limitations
