@@ -8,15 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f3d29c7-d679-48ff-b48c-bf2bc9a620ee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/log4j.properties" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\EmailWebService\out\production\NewEmailWebservice\enterprise\java\resources\EmailDriver$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\EmailWebService\out\production\NewEmailWebservice\enterprise\java\resources\EmailDriver.class" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\EmailWebService\src\enterprise\java\resources\EmailDriver.java" afterPath="$PROJECT_DIR$/src/enterprise/java/emaildriver/EmailDriver.java" />
-      <change type="MOVED" beforePath="C:\Users\Sun Prairie PC\Documents\GitHub\EJ01\EmailWebService\src\enterprise\java\resources\UrlConnection.java" afterPath="$PROJECT_DIR$/src/enterprise/java/workingexample/UrlConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/NewEmailWebservice/enterprise/java/entity/EmailMessage.class" afterPath="$PROJECT_DIR$/out/production/NewEmailWebservice/enterprise/java/entity/EmailMessage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/enterprise/java/entity/EmailMessage.java" afterPath="$PROJECT_DIR$/src/enterprise/java/entity/EmailMessage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/enterprise/java/emaildriver/EmailDriverTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/enterprise/java/emaildriver/EmailDriver.java" afterPath="$PROJECT_DIR$/src/enterprise/java/emaildriver/EmailDriver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NewEmailWebservice.iml" afterPath="$PROJECT_DIR$/NewEmailWebservice.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NewEmailWebservice.iws" />
@@ -40,35 +34,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmailDriver.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmailDriver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/enterprise/java/emaildriver/EmailDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4197531">
-              <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4851#5075#0" expanded="true" />
-                <element signature="e#5074#5075#0" expanded="true" />
+                <element signature="e#4970#5194#0" expanded="true" />
+                <element signature="e#5193#5194#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailDriverTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/enterprise/java/emaildriver/EmailDriverTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.65804595">
+              <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,6 +140,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -165,7 +162,9 @@
         <option value="$PROJECT_DIR$/src/enterprise/java/workingexample/UrlConnection.java" />
         <option value="$PROJECT_DIR$/src/enterprise/java/resources/EmailDriver.java" />
         <option value="$PROJECT_DIR$/src/enterprise/java/entity/EmailMessage.java" />
+        <option value="$PROJECT_DIR$/test/enterprise/java/emaildriver/EmailDriverTestTest.java" />
         <option value="$PROJECT_DIR$/src/enterprise/java/emaildriver/EmailDriver.java" />
+        <option value="$PROJECT_DIR$/test/enterprise/java/emaildriver/EmailDriverTest.java" />
       </list>
     </option>
   </component>
@@ -234,6 +233,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="EmailWebService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewEmailWebservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmailWebService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="emaildriver" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -352,6 +369,8 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -363,11 +382,17 @@
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="enterprise.java.emaildriver" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="enterprise.java.workingexample" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UrlConnection (1)">
+  <component name="RunManager" selected="JUnit.All in NewEmailWebservice">
     <configuration default="false" name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.0.26" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
       <deployment>
@@ -445,6 +470,27 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="NewEmailWebservice" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in NewEmailWebservice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="NewEmailWebservice" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -855,18 +901,20 @@
         </option>
       </method>
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.TomEE" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
       <item index="2" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
       <item index="3" class="java.lang.String" itemvalue="Application.UrlConnection" />
       <item index="4" class="java.lang.String" itemvalue="Application.UrlConnection (1)" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.All in NewEmailWebservice" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.UrlConnection (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.UrlConnection" />
-        <item index="2" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in NewEmailWebservice" />
+        <item index="1" class="java.lang.String" itemvalue="Application.UrlConnection (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Application.UrlConnection" />
+        <item index="3" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -885,7 +933,7 @@
       <workItem from="1449537187862" duration="4560000" />
       <workItem from="1449633883897" duration="27000" />
       <workItem from="1449633986636" duration="499000" />
-      <workItem from="1449726905932" duration="6081000" />
+      <workItem from="1449726905932" duration="8903000" />
     </task>
     <task id="LOCAL-00001" summary="adds paths used for testing.">
       <created>1449634074208</created>
@@ -917,11 +965,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449728964529</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added logging, split out methods for unit testing, refactoring">
+      <created>1449733038536</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1449733038536</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15159000" />
+    <option name="totallyTimeSpent" value="17981000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -945,7 +999,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35836178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35836178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24886535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -956,7 +1010,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -984,7 +1038,8 @@
     <MESSAGE value="Removed old HostServer.java class" />
     <MESSAGE value="modify javadoc" />
     <MESSAGE value="added an actually working test class using paula's example" />
-    <option name="LAST_COMMIT_MESSAGE" value="added an actually working test class using paula's example" />
+    <MESSAGE value="added logging, split out methods for unit testing, refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="added logging, split out methods for unit testing, refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1019,8 +1074,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4851#5075#0" expanded="true" />
-            <element signature="e#5074#5075#0" expanded="true" />
+            <element signature="e#4970#5194#0" expanded="true" />
+            <element signature="e#5193#5194#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1047,8 +1102,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4851#5075#0" expanded="true" />
-            <element signature="e#5074#5075#0" expanded="true" />
+            <element signature="e#4970#5194#0" expanded="true" />
+            <element signature="e#5193#5194#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1085,8 +1140,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4851#5075#0" expanded="true" />
-            <element signature="e#5074#5075#0" expanded="true" />
+            <element signature="e#4970#5194#0" expanded="true" />
+            <element signature="e#5193#5194#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1115,8 +1170,8 @@
           <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4851#5075#0" expanded="true" />
-            <element signature="e#5074#5075#0" expanded="true" />
+            <element signature="e#4970#5194#0" expanded="true" />
+            <element signature="e#5193#5194#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1145,8 +1200,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4851#5075#0" expanded="true" />
-            <element signature="e#5074#5075#0" expanded="true" />
+            <element signature="e#4970#5194#0" expanded="true" />
+            <element signature="e#5193#5194#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1235,12 +1290,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/enterprise/java/emaildriver/EmailDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4197531">
-          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4851#5075#0" expanded="true" />
-            <element signature="e#5074#5075#0" expanded="true" />
+            <element signature="e#4970#5194#0" expanded="true" />
+            <element signature="e#5193#5194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/enterprise/java/emaildriver/EmailDriverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65804595">
+          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

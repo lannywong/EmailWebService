@@ -22,22 +22,22 @@ import java.util.Properties;
 @Path("/sendEmail")
 public class EmailDriver {
 
-    private final static Logger _log = Logger.getLogger("Email Services");
+    static Logger _log = Logger.getLogger("Email Services");
 
-    private final static String USER_NAME = "slackTeamTest@gmail.com";
-    private final static String PASSWORD = "weLoveSlack";
-    private final static String HOST_ADDRESS = "slackTeamTest@gmail.com";
+    protected final static String USER_NAME = "slackTeamTest@gmail.com";
+    protected final static String PASSWORD = "weLoveSlack";
+    protected final static String HOST_ADDRESS = "slackTeamTest@gmail.com";
 
-    private final static String HOST_KEY = "mail.smtp.host";
-    private final static String HOST = "smtp.gmail.com";
-    private final static String SF_PORT_KEY = "mail.smtp.socketFactory.port";
-    private final static String SF_PORT = "465";
-    private final static String CLASS_KEY = "mail.smtp.socketFactory.class";
-    private final static String CLASS = "javax.net.ssl.SSLSocketFactory";
-    private final static String AUTH_KEY = "mail.smtp.auth";
-    private final static String AUTH = "true";
-    private final static String SMTP_PORT_KEY = "mail.smtp.port";
-    private final static String SMTP_PORT = "465";
+    protected final static String HOST_KEY = "mail.smtp.host";
+    protected final static String HOST = "smtp.gmail.com";
+    protected final static String SF_PORT_KEY = "mail.smtp.socketFactory.port";
+    protected final static String SF_PORT = "465";
+    protected final static String CLASS_KEY = "mail.smtp.socketFactory.class";
+    protected final static String CLASS = "javax.net.ssl.SSLSocketFactory";
+    protected final static String AUTH_KEY = "mail.smtp.auth";
+    protected final static String AUTH = "true";
+    protected final static String SMTP_PORT_KEY = "mail.smtp.port";
+    protected final static String SMTP_PORT = "465";
 
     /**
      * The only purpose of this method is to return a String, letting the user know that the path was reached.
@@ -127,7 +127,9 @@ public class EmailDriver {
 
     /**
      * Creates and returns a Session object created with
-     * the input properties.
+     * the input properties. The function has to override
+     * the PasswordAuthentication method to instantiate
+     * the interface.
      */
     public Session createSession(Properties props) {
 
