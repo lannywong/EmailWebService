@@ -1,9 +1,9 @@
 package enterprise.java.resources;
+
 import enterprise.java.JsonMapper;
 import enterprise.java.entity.EmailMessage;
 import enterprise.java.entity.Recipient;
 import enterprise.java.entity.Recipients;
-
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -14,7 +14,8 @@ import javax.ws.rs.Produces;
 import java.util.Properties;
 
 /**
- * Created by Student on 11/7/2015.
+ * @author SlakkDaddeez
+ *
  */
 @Path("/sendEmail")
 public class EmailDriver {
@@ -121,6 +122,7 @@ public class EmailDriver {
             message.setText(emailMessage.getBody());
 
             Transport.send(message);
+
         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }
