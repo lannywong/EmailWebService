@@ -4,11 +4,11 @@ package enterprise.java.entity;
  * Created by Student on 11/7/2015.
  */
 public class EmailMessage {
+
     private String subject;
     private String body;
 
     public EmailMessage() {}
-
 
     public EmailMessage(String subject,String body) {
         setSubject(subject);
@@ -39,4 +39,12 @@ public class EmailMessage {
     public void setSubject(String subject) {
         this.subject = subject;
     }
+
+    @Override
+    public String toString() {
+
+        return "*** Email Message - " + getSubject() + " ***";
+    }
+
+
 }

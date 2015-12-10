@@ -1,9 +1,11 @@
-package enterprise.java.resources;
+package enterprise.java.emaildriver;
 
 import enterprise.java.JsonMapper;
 import enterprise.java.entity.EmailMessage;
 import enterprise.java.entity.Recipient;
 import enterprise.java.entity.Recipients;
+import org.apache.log4j.Logger;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -19,6 +21,23 @@ import java.util.Properties;
  */
 @Path("/sendEmail")
 public class EmailDriver {
+
+    private final static Logger _log = Logger.getLogger("Email Services");
+
+    private final static String USER_NAME = "slackTeamTest@gmail.com";
+    private final static String PASSWORD = "weLoveSlack";
+    private final static String HOST_ADDRESS = "slackTeamTest@gmail.com";
+
+    private final static String HOST_KEY = "mail.smtp.host";
+    private final static String HOST = "smtp.gmail.com";
+    private final static String SF_PORT_KEY = "mail.smtp.socketFactory.port";
+    private final static String SF_PORT = "465";
+    private final static String CLASS_KEY = "mail.smtp.socketFactory.class";
+    private final static String CLASS = "javax.net.ssl.SSLSocketFactory";
+    private final static String AUTH_KEY = "mail.smtp.auth";
+    private final static String AUTH = "true";
+    private final static String SMTP_PORT_KEY = "mail.smtp.port";
+    private final static String SMTP_PORT = "465";
 
     /**
      * The only purpose of this method is to return a String, letting the user know that the path was reached.
@@ -50,10 +69,11 @@ public class EmailDriver {
 
         sendEmail(message, recipient);
 
-        String feedbackMessage = "Email Sent Successfully";
-        return feedbackMessage;
+        /* log and response */
+        String msg = message.toString() + " Sent Successfully to " + recipient;
+        _log.info(msg);
+        return msg;
     }
-
 
     /**
      * This method maps a Recipients object based on the jsonRecipients parameter.
@@ -76,6 +96,7 @@ public class EmailDriver {
         feedbackMessage.append("Emails were sent to:\n");
 
         for(Recipient recipient : recipients.getRecipientsArrayList()) {
+
             String template = "Hello " + recipient.getRecipientName();
             EmailMessage message = new EmailMessage(template ,subject, body);
 
@@ -83,7 +104,56 @@ public class EmailDriver {
             feedbackMessage.append(recipient.getRecipientName() + "\n");
         }
 
+        _log.info(feedbackMessage.toString());
         return feedbackMessage.toString();
+    }
+
+    /**
+      * Creates and returns a Properties object populated with
+      * the assigned constants.
+      */
+    public Properties createProperties() {
+
+        Properties props = new Properties();
+
+        props.put(HOST_KEY, HOST);
+        props.put(SF_PORT_KEY, SF_PORT);
+        props.put(CLASS_KEY, CLASS);
+        props.put(AUTH_KEY, AUTH);
+        props.put(SMTP_PORT_KEY, SMTP_PORT);
+
+        return props;
+    }
+
+    /**
+     * Creates and returns a Session object created with
+     * the input properties.
+     */
+    public Session createSession(Properties props) {
+
+        Session session = Session.getInstance(props,
+                new Authenticator() {
+                    protected PasswordAuthentication getPasswordAuthentication() {
+                        return new PasswordAuthentication(USER_NAME, PASSWORD);
+                    }
+                });
+
+        return session;
+    }
+
+    /**
+     * Creates and returns a Session object created with
+     * the input properties.
+     */
+    public Message createMessage(Session session, EmailMessage emailMessage, String address) throws MessagingException {
+
+        Message message = new MimeMessage(session);
+        message.setFrom(new InternetAddress(HOST_ADDRESS));
+        message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(address));
+        message.setSubject(emailMessage.getSubject());
+        message.setText(emailMessage.getBody());
+
+        return message;
     }
 
     /**
@@ -94,36 +164,22 @@ public class EmailDriver {
      * @param address an address the email should be sent to
      */
     public void sendEmail(EmailMessage emailMessage, String address) {
-        final String username = "slackTeamTest@gmail.com";
-        final String password = "weLoveSlack";
 
-        Properties props = new Properties();
-
-        props.put("mail.smtp.host", "smtp.gmail.com");
-        props.put("mail.smtp.socketFactory.port", "465");
-        props.put("mail.smtp.socketFactory.class",
-                "javax.net.ssl.SSLSocketFactory");
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.port", "465");
-
-        Session session = Session.getInstance(props,
-                new Authenticator() {
-                    protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(username, password);
-                    }
-                });
+        Properties props = createProperties();
+        Session session = createSession(props);
 
         try {
 
-            Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("slackTeamTest@gmail.com"));
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(address));
-            message.setSubject(emailMessage.getSubject());
-            message.setText(emailMessage.getBody());
+            Message message = createMessage(session, emailMessage, address);
+
+            /* log send attempt */
+            String msg = " Attempting to send " + message.toString() + "to Recipient: " + address;
+            _log.info(msg);
 
             Transport.send(message);
 
         } catch (MessagingException e) {
+            _log.error("*** Exception thrown sending message to Recipient: " + address + " *** " + e);
             throw new RuntimeException(e);
         }
     }

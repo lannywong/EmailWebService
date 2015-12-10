@@ -1,4 +1,4 @@
-package enterprise.java.resources;
+package enterprise.java.workingexample;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -56,6 +56,10 @@ public class UrlConnection {
 
     /**
      * Builds and returns a URL for the search.books method
+     *
+     * @param recipient The email address of the recipient
+     * @param subject The subject of the email
+     * @param body The body of the email massage
      */
     public URL getEmailUrl(String recipient, String subject, String body) throws MalformedURLException {
 
@@ -68,6 +72,12 @@ public class UrlConnection {
         return new URL(url);
     }
 
+    /**
+     * Encodes the string to a URL, manually replacing "+" with "%20" and
+     * "'" with "%27".
+     *
+     * @param path The URL path to encode
+     */
     public String encodeString(String path) {
 
         String url = URLEncoder.encode(path).replace("+", "%20").replace("'", "%27");
