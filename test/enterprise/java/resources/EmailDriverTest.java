@@ -1,4 +1,4 @@
-package enterprise.java.emaildriver;
+package enterprise.java.resources;
 
 import enterprise.java.entity.EmailMessage;
 import org.junit.Test;

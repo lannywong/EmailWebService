@@ -20,9 +20,7 @@ public class UrlConnection {
     protected static String EMAIL_URL_FRONT = "http://tomcat-mademailservice.rhcloud.com/NewEmailWebservice_war/rest/sendEmail/";
 
     /**
-     * This will call the email service. The example you provided works. Thank you!
-     * I don't know why ours did not work but we were missing the UrlConnection and
-     * we did not map the response to a Buffered reader. Power spammer commence.
+     * A sample main class that makes a call to the email webservice and interprets the response.
      */
     public static void main(String[] args) {
 

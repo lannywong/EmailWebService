@@ -9,6 +9,8 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="jax-rs-jersey-1.12" />
+          <element id="file-copy" path="$APPLICATION_HOME_DIR$/lib/log4j.jar" />
+          <element id="library" level="module" name="JUnit4" module-name="NewEmailWebservice" />
         </element>
       </element>
       <element id="library" level="project" name="jax-rs-jersey-1.12" />
